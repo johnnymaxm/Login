@@ -1,0 +1,48 @@
+<head>
+    <title>Registro</title>
+</head>
+
+<body>
+    <form id="login_form">
+        <div>
+            <div id="form_header">
+                <h1>Registro</h1>
+        </div>
+        <div class="form-field">
+        <input type="checkbox" name="dark" id="dark" onchange="onChangedark()" placeholder="seu@email.com">
+        <div><label> Nome completo: </label></div>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="name" id="name" onchange="onChangeName()" placeholder="Nome completo">
+            </div>
+        <div><label> E-mail: </label></div>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com">
+        </div>
+        <div><label> Data de nascimento: </label></div>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="date" name="date" id="date" onchange="onChangeDate()" placeholder="Data de nascimento">
+        </div>
+        <div>
+            <div><label> Senha: </label></div>
+            <i class="fa-solid fa-key"></i>
+            <input type="password" name="password" id="password" onchange="onChangePassword()" placeholder="Senha">
+            
+        </div>
+        <div>
+            <button type="button" class="outline" onclick="register()">Registrar</button>
+        </div>
+    </form>
+</body>
+
+<link rel="stylesheet" href="index.css"/>
+<link rel="stylesheet" href="global.css"/>
+
+<script src="index.js">  </script>
+<script src="validations.js">  </script>
+<script src="Firebase">  </script> 
+<script src="firebase">  </script>
+<script>
+
+</script>
+
+</html>

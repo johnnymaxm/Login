@@ -1,0 +1,96 @@
+@charset "UTP-8";
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #E7E7E7;
+}
+
+
+h1{
+    background-image: linear-gradient(to right #733B2F, #D9B88F);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+div{
+    margin: 2px;
+    display: inline-block;
+}
+
+
+div:hover{
+    box-shadow: 5px 5px 10px #6d6c6c;
+}
+
+div > h1{
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+}
+div > h2{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+div > h3{
+    font-size: 13px;
+    margin: 0px;
+}
+div > h4{
+    font-size: 10px;
+    margin: 0px;
+}
+
+.centro{
+    text-align: center;
+}
+
+
+.tituloOL{
+    font-weight: bold;
+    color: #733B2F;
+}
+
+.image{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 290px;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px #969595;
+    text-align: left;
+    display: inline-block;
+}
+.box-produto{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 180px;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px #969595;
+    text-align: left;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.esquerda{
+    text-align: left;
+    padding: 10px;
+    margin-left: 0px;
+}
+
+.list{
+    padding: 0px;
+}
+.list-element{
+    list-style-type: none;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+    margin-left: 0px;
+
+    
+
+}

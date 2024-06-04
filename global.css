@@ -1,0 +1,28 @@
+.clear{
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+.solid{
+    background: rgb(255, 166, 0);
+    border: 1px solid rgb(255, 166, 0);
+    color: white;
+}
+.outline{
+    background: rgb(255, 166, 0);
+    color: white;
+    border: 1px solid rgb(255, 166, 0);
+}
+button:active{
+    opacity: 0.8;
+}
+button[disabled]{
+    opacity: 0.7;
+}
+.error{
+    color: rgb(255, 166, 0);
+    display: none;
+    flex-direction: column;
+    padding: 5px 5px;
+    border-radius: 8px;
+}

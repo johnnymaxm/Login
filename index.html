@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Login</title>
+    </head>
+
+    <body>
+        <form id="login_form">
+            <div>
+                <div id="form_header">
+                    <h1>Login</h1>
+            </div>
+            <div class="error" id="email-required-error"><b>*Email obrigatório</b></div>
+            <div class="error" id="email-invalid-error"><b>*Email invalido</b></div>
+            <div class="error" id="password-required-error"><b>*Senha é obrigatória</b></div>
+            <div class="form-field">
+                <div><label> E-mail </label></div>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com">
+            </div>
+            <div>
+                <div><label> Senha </label></div>
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="password" id="password" onchange="onChangePassword()" placeholder="Senha">
+                
+            </div>
+            <div>
+                <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar senha</button>
+            </div>
+            <div>
+                <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+            </div>
+            <div>
+                <button type="button" class="outline" onclick="register()">Registrar</button>
+            </div>
+        </form>
+    </body>
+
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="global.css"/>
+
+    <script src="index.js">  </script>
+    <script src="validations.js">  </script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js";></script> 
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js";></script> 
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCWCI1IbnjH7FyOytyL6rAaYhmc3U5ZLGA",
+            authDomain: "loja-johnny.firebaseapp.com",
+            projectId: "loja-johnny",
+            storageBucket: "loja-johnny.appspot.com",
+            messagingSenderId: "354188057230",
+            appId: "1:354188057230:web:fd8c8c12157652301507df"
+        };
+    firebase.inicializeApp(firebaseConfig);
+
+    firebase.auth().signInWithEmailAndPassword("johnnymax_10@hotmail.com", 123456).then(responde => {
+        console.log('Sucess', response)
+    }).catch(error => {
+        console.log('Error', error)
+    });
+    </script>
+
+</html>
